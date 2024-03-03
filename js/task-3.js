@@ -8,18 +8,17 @@ class StringBuilder {
     return this.#value;
   }
   padEnd(str) {
-    let newStr = this.#value + str;
-    this.#value = newStr;
+    this.#value = this.#value + str;
+   
   }
 
   padStart(str) {
-    let newStr = str + this.#value;
-    this.#value = newStr;
+    this.#value = str + this.#value;
+   
   }
 
   padBoth(str) {
-    let newStr = str + this.#value + str;
-    this.#value = newStr;
+    this.#value = str + this.#value + str;   
   }
 }
 
